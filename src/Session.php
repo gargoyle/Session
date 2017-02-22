@@ -12,24 +12,9 @@ use InvalidArgumentException;
  */
 class Session
 {
-    /**
-     * A unique session identifier
-     * 
-     * @var string
-     */
     private $sessionId;
-    
-    /**
-     * @var SessionProfile
-     */
     private $profile;
-    
-    /**
-     *
-     * @var string
-     */
     private $sourceIp;
-
     
     public function __construct(string $sessionId)
     {
