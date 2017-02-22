@@ -1,0 +1,26 @@
+{
+    "name": "pmc/session",
+    "description": "A basic class to keep track of a session for a web application.",
+    
+    "authors": [
+        {
+            "name": "Gargoyle",
+            "email": "g@rgoyle.com"
+        }
+    ],
+    "autoload": {
+        "psr-4" : {
+            "Pmc\\Session\\" : "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": { 
+            "Pmc\\Session\\Tests\\": "tests/" }
+    },
+    "require": {
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.7"
+    }
+}
