@@ -66,7 +66,7 @@ class Session
             throw new InvalidArgumentException('Data array must include "sessionId" key');
         }
         $session = new self($data['sessionId']);
-        $session->sourceIp = $data['sourceIp'];
+        $session->sourceIp = $data['sourceIp'] ?? null;
         
         if (isset($data['userId']) && isset($data['username']) && isset($data['roles']) && is_array($data['roles'])) {
             $session->profile = new SessionProfile($data['userId'], $data['username'], $data['roles']);
